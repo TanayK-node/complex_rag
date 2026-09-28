@@ -1,0 +1,57 @@
+{
+  "document_name": "Everus 2025 10-K",
+  "questions": [
+    {"id": "k1", "category": "simple_factual", "question": "What is Everus Construction Group's stock trading symbol?",
+     "expected_keyword_groups": [["ticker symbol", "ECG"]]},
+    {"id": "k2", "category": "simple_factual", "question": "Which stock market index is Everus Construction Group a member of?",
+     "expected_keyword_groups": [["S&P SmallCap 600"]]},
+    {"id": "k3", "category": "simple_factual", "question": "Where is Everus Construction Group's corporate headquarters located?",
+     "expected_keyword_groups": [["Bismarck, ND 58503"]]},
+    {"id": "k4", "category": "simple_factual", "question": "Which section of the Sarbanes-Oxley Act requires effective internal control over financial reporting?",
+     "expected_keyword_groups": [["Section 404 of the Sarbanes-Oxley"]]},
+
+    {"id": "k5", "category": "section_specific", "question": "What types of specialty contracting services does Everus provide?",
+     "expected_keyword_groups": [["electrical and mechanical", "transmission and distribution"]]},
+    {"id": "k6", "category": "section_specific", "question": "What does the Electrical & Mechanical segment's service offering include?",
+     "expected_keyword_groups": [["low voltage services", "renewable installations"]]},
+    {"id": "k7", "category": "section_specific", "question": "What risk factor relates to research analysts and the company's stock?",
+     "expected_keyword_groups": [["publish misleading or unfavorable research"]]},
+
+    {"id": "k8", "category": "exception_condition", "question": "What risk does the company disclose related to fixed-price contracts?",
+     "expected_keyword_groups": [["dependence upon fixed-price contracts"]]},
+    {"id": "k9", "category": "exception_condition", "question": "What uncertainty does the company disclose about renewing its insurance coverage?",
+     "expected_keyword_groups": [["existing insurance coverages will be renewed upon the"]]},
+    {"id": "k10", "category": "exception_condition", "question": "What risk does share dilution from equity awards pose to shareholders?",
+     "expected_keyword_groups": [["percentage ownership in us may be diluted"]]},
+
+    {"id": "k11", "category": "hierarchical", "question": "Under Part I of the 10-K, which Item covers Cybersecurity?",
+     "expected_keyword_groups": [["Item 1C. Cybersecurity"]]},
+    {"id": "k12", "category": "hierarchical", "question": "According to the table of contents, what page does Part I begin on and which Item is listed first under it?",
+     "expected_keyword_groups": [["Part I", "Item 1. Business"]]},
+
+    {"id": "k13", "category": "cross_reference", "question": "Where should a reader look for consolidated financial statements referenced in the MD&A section?",
+     "expected_keyword_groups": [["consolidated financial statements and related notes"]]},
+
+    {"id": "k14", "category": "multi_hop", "question": "What kind of services does Everus provide, and across what geography does it provide them?",
+     "expected_keyword_groups": [["full spectrum of construction services", "across the United States"]]},
+
+    {"id": "k15", "category": "comparison", "question": "Compare the general description of Everus's construction services with the specific Electrical & Mechanical segment's offerings.",
+     "expected_keyword_groups": [["full spectrum of construction services"], ["low voltage services"]]},
+
+    {"id": "k16", "category": "table", "question": "What page does Item 1A Risk Factors begin on, according to the table of contents?",
+     "expected_keyword_groups": [["Item 1A. Risk Factors", "10"]]},
+    {"id": "k17", "category": "table", "question": "What page does Item 2 Properties begin on, according to the table of contents?",
+     "expected_keyword_groups": [["Item 2. Properties", "31"]]},
+
+    {"id": "k18", "category": "no_answer", "question": "What is the CEO's personal phone number?",
+     "expected_keyword_groups": [], "is_answerable": false,
+     "notes": "Not disclosed in a public 10-K filing."},
+    {"id": "k19", "category": "no_answer", "question": "What is the exact number of shares owned by each individual board member?",
+     "expected_keyword_groups": [], "is_answerable": false,
+     "notes": "Individual director share counts are not part of this excerpt's content."},
+
+    {"id": "k20", "category": "ambiguous", "question": "What are the main risks to the business?",
+     "expected_keyword_groups": [["dependence upon fixed-price contracts"], ["percentage ownership in us may be diluted"]],
+     "notes": "The risk factors section lists many risks; this checks the system surfaces at least one legitimate one."}
+  ]
+}

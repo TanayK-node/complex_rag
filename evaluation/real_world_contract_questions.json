@@ -1,0 +1,73 @@
+{
+  "document_name": "UK Short Form Contract",
+  "questions": [
+    {"id": "c1", "category": "simple_factual", "question": "How much notice must the Buyer give to terminate the Contract without a reason?",
+     "expected_keyword_groups": [["90 days' written notice"]]},
+    {"id": "c2", "category": "simple_factual", "question": "Within how many days must the Buyer pay an invoice after receiving it?",
+     "expected_keyword_groups": [["within 30 days"]]},
+    {"id": "c3", "category": "simple_factual", "question": "For how many years after termination must the Supplier keep contract records available for audit?",
+     "expected_keyword_groups": [["7 years after the date of expiry"]]},
+    {"id": "c4", "category": "simple_factual", "question": "How long must a Force Majeure Event last before a Party can terminate because of it?",
+     "expected_keyword_groups": [["Force Majeure Event which lasts for 90 days continuously"]]},
+
+    {"id": "c5", "category": "section_specific", "question": "What does the contract say happens to risk in the Goods after Delivery?",
+     "expected_keyword_groups": [["Risk in the Goods transfers to the Buyer on Delivery"]]},
+    {"id": "c6", "category": "section_specific", "question": "Who owns New IPR created under the Contract?",
+     "expected_keyword_groups": [["New IPR created under the Contract is owned by the Buyer"]]},
+    {"id": "c7", "category": "section_specific", "question": "What does the Supplier warrant about its ownership of the Goods?",
+     "expected_keyword_groups": [["full and unrestricted ownership of the Goods"]]},
+    {"id": "c8", "category": "section_specific", "question": "What must each Party do with Confidential Information it receives?",
+     "expected_keyword_groups": [["keep all Confidential Information it receives confidential and secure"]]},
+    {"id": "c9", "category": "section_specific", "question": "Can a Party disclose the other Party's Confidential Information without consent?",
+     "expected_keyword_groups": [["not disclose, use or exploit the disclosing Party's Confidential Information"]]},
+    {"id": "c10", "category": "section_specific", "question": "How are disputed amounts under the Contract resolved?",
+     "expected_keyword_groups": [["dispute resolution procedure"]]},
+
+    {"id": "c11", "category": "exception_condition", "question": "Within what timeframe must the Supplier patch a critical security vulnerability?",
+     "expected_keyword_groups": [["within 5 Working Days of the public release"]]},
+    {"id": "c12", "category": "exception_condition", "question": "Within what timeframe must the Supplier patch an 'important' classified vulnerability?",
+     "expected_keyword_groups": [["within 1 month of the public release"]]},
+    {"id": "c13", "category": "exception_condition", "question": "What must the Supplier guarantee about Government Data if it stops trading?",
+     "expected_keyword_groups": [["guarantee prompt availability of Government Data"]]},
+    {"id": "c14", "category": "exception_condition", "question": "How securely must the Supplier delete Government Data on request?",
+     "expected_keyword_groups": [["securely erase", "specialist techniques"]]},
+    {"id": "c15", "category": "exception_condition", "question": "What must a Party do if it suspects unauthorised access to Confidential Information?",
+     "expected_keyword_groups": [["immediately notify the disclosing Party if it suspects unauthorised access"]]},
+
+    {"id": "c16", "category": "hierarchical", "question": "What must the Supplier do regarding the Modern Slavery Assessment Tool?",
+     "expected_keyword_groups": [["Modern", "Slavery Assessment Tool"]]},
+    {"id": "c17", "category": "hierarchical", "question": "What equality-related conduct must the Supplier not engage in?",
+     "expected_keyword_groups": [["discrimination on the grounds of race, sex, gender reassignment"]]},
+
+    {"id": "c18", "category": "cross_reference", "question": "Under what payment shortfall can the Supplier terminate the Contract for the Buyer's non-payment?",
+     "expected_keyword_groups": [["over 10% of the total Contract value", "1,000"]]},
+    {"id": "c19", "category": "cross_reference", "question": "How can the Buyer immediately terminate the Contract for the Supplier's failure to agree a rectification plan?",
+     "expected_keyword_groups": [["Buyer has the right to immediately terminate its Contract by issuing a termination notice"]]},
+
+    {"id": "c20", "category": "multi_hop", "question": "What must the Supplier do before it can terminate for the Buyer's late payment, and what is the minimum amount involved?",
+     "expected_keyword_groups": [["reminder notice if the Buyer does not pay an undisputed invoice on time", "over 10% of the total Contract value"]]},
+    {"id": "c21", "category": "multi_hop", "question": "If a Force Majeure Event lasts over 90 days, what happens to the Buyer's payment obligations and previously-paid Charges?",
+     "expected_keyword_groups": [["Force Majeure Event which lasts for 90 days continuously", "payment obligations under the terminated Contract stop immediately"]]},
+
+    {"id": "c22", "category": "comparison", "question": "Compare the Buyer's right to terminate without cause with the Supplier's right to terminate for the Buyer's non-payment.",
+     "expected_keyword_groups": [["90 days' written notice"], ["over 10% of the total Contract value"]]},
+    {"id": "c23", "category": "comparison", "question": "Compare the patch timeframes for critical versus important security vulnerabilities.",
+     "expected_keyword_groups": [["within 5 Working Days of the public release"], ["within 1 month of the public release"]]},
+
+    {"id": "c24", "category": "table", "question": "According to the contract's index, which Annex covers Charges?",
+     "expected_keyword_groups": [["Annex", "Charges"]]},
+    {"id": "c25", "category": "table", "question": "According to the contract's index, which Annex covers Security Management?",
+     "expected_keyword_groups": [["Annex", "Security Management"]]},
+
+    {"id": "c26", "category": "no_answer", "question": "What is the Supplier's VAT registration number?",
+     "expected_keyword_groups": [], "is_answerable": false,
+     "notes": "This short-form template contract does not name a specific supplier or VAT number."},
+    {"id": "c27", "category": "no_answer", "question": "What is the average annual salary of the Supplier's employees?",
+     "expected_keyword_groups": [], "is_answerable": false,
+     "notes": "Not addressed anywhere in this contract template."},
+
+    {"id": "c28", "category": "ambiguous", "question": "What happens if the delivered goods are faulty?",
+     "expected_keyword_groups": [["repair, replace, refund or substitute"], ["Late Delivery of the Services will be a default"]],
+     "notes": "Vague enough to map to either the Goods remedy clause or the Services default clause."}
+  ]
+}

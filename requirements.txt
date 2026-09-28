@@ -1,0 +1,17 @@
+# Phase 1 (ingestion) — already installed and tested in this environment
+pymupdf
+pdfplumber
+reportlab
+pydantic>=2
+pydantic-settings
+rank_bm25
+faiss-cpu
+scikit-learn
+
+# Phase 4 (generation) — no extra deps; AnthropicProvider uses the stdlib
+# urllib, no `anthropic` SDK dependency required. Set ANTHROPIC_API_KEY or
+# RAG_LLM_API_KEY to use it instead of the deterministic mock provider.
+
+# Phase 2+ optional upgrade path (not installed here — see vector_store/embedder.py
+# and reranking/heuristic_reranker.py for why, and what to change to use them)
+# sentence-transformers
